@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- ---------------------left-container----------------------- -->
+        <div class="left-container">
+            <div class="image-container">
+                <img src="/images/male.jpg" alt="">
+            </div>
+
+            <div class="name-container">
+                <p>John Doe</p>
+                <h3>Front End Developer</h3>
+            </div>
+
+            <div class="button-container">
+                <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                        viewBox="0 0 50 50" style="fill:#40C057;">
+                        <path
+                            d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
+                        </path>
+                    </svg></div>
+                <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                        viewBox="0 0 50 50" style="fill:#40C057;">
+                        <path
+                            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                        </path>
+                    </svg></div>
+                <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                        viewBox="0 0 64 64" style="fill:#40C057;">
+                        <path
+                            d="M48,8H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8V16C56,11.582,52.418,8,48,8z M24,47h-5V27h5 V47z M24.029,23.009C23.382,23.669,22.538,24,21.5,24c-1.026,0-1.865-0.341-2.519-1.023S18,21.458,18,20.468 c0-1.02,0.327-1.852,0.981-2.498C19.635,17.323,20.474,17,21.5,17c1.038,0,1.882,0.323,2.529,0.969 C24.676,18.615,25,19.448,25,20.468C25,21.502,24.676,22.349,24.029,23.009z M47,47h-5V35.887C42,32.788,40.214,31,38,31 c-1.067,0-2.274,0.648-2.965,1.469S34,34.331,34,35.594V47h-5V27h5v3.164h0.078c1.472-2.435,3.613-3.644,6.426-3.652 C44.5,26.5,47,29.5,47,34.754V47z">
+                        </path>
+                    </svg></i></div>
+                <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                        viewBox="0 0 24 24" style="fill:#40C057;">
+                        <path
+                            d="M 3 3 L 3 21 L 21 21 L 21 3 L 3 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z">
+                        </path>
+                    </svg></div>
+
+            </div>
+
+            <div class="cv-container">
+                <div class="cv-border">
+                    <p>Download CV</p>
+                </div>
+                <div class="cv-border">
+                    <p>Contact Me</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- -----------------right-container----------------------->
+
+
+        <div class="right-container">
+            <section class="about-section">
+
+                <div class="heading">
+                    <h1>About Me</h1>
+                </div>
+
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatem, non magni excepturi ad
+                        incidunt vel eos dolorem veritatis labore ullam, ipsam aut saepe quia doloremque reprehenderit
+                        nostrum esse. Inventore laborum, eaque earum ipsam, nemo id illum, sapiente sed doloribus
+                        voluptate dicta ducimus odit nam veniam sunt? Sunt corrupti dignissimos, amet esse fugit in
+                        praesentium nam officiis cupiditate quae placeat voluptatum cumque? Repudiandae suscipit
+                        corrupti, vitae facilis quae ipsam, facere iusto reprehenderit dolores delectus impedit quam
+                        dolorem eum in ea cupiditate praesentium soluta voluptatem animi consectetur hic nobis debitis
+                        quasi! Eos adipisci neque sint iusto fugiat odio labore ratione minus! Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Impedit doloribus, perspiciatis animi quia laborum a facilis
+                        illo perferendis! Maiores similique doloremque maxime asperiores nisi ullam dolor, dolorum
+                        accusantium laborum repudiandae ad iste est in modi necessitatibus cupiditate ratione voluptates
+                        sint? Incidunt porro, nobis assumenda sapiente cupiditate quas voluptas beatae iste.</p>
+                </div>
+
+                <div class="address-list">
+                    <div class="left">
+                        <ul>
+                            <li><span>Name:</span> John Doe</li>
+                            <li><span>Degree:</span> Master</li>
+                            <li><span>Phone:</span> +012 345 6789</li>
+                            <li><span>Address:</span> 123 Street,New York,USA</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="right">
+                        <ul>
+                            <li><span>Birthday:</span> 1 April 1990</li>
+                            <li><span>Experience:</span> 10 Master</li>
+                            <li><span>Email:</span> info@example.com</li>
+                            <li><span>Freelacne:</span> Available</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="client-container">
+                    <div class="box-1">
+                        <div><span>10</span></div>
+                        <div>Years of<p>Experience</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box-2">
+                        <div><span>100</span></div>
+                        <div>Happy<p>Clients</p>
+                        </div>
+                    </div>
+
+
+                    <div class="box-3">
+                        <div><span>200</span></div>
+                        <div>
+                            Complete
+                            <p>Projects</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <hr>
+
+
+            <!--=============== skils section =========================-->
+
+            <section class="skills-container">
+                <h1>Skills</h1>
+
+                <div class="technology">
+                    <div class="inner-left">
+                        <div class="html">
+                            <div class="html-1">
+                                <div>HTML</div>
+                                <div>
+                                    <div>95%</div>
+                                </div>
+                            </div>
+
+                            <div class="bar-1"></div>
+                        </div>
+                        <div class="html">
+                            <div class="html-1">
+                                <div>CSS</div>
+                                <div>85%</div>
+                            </div>
+
+                            <div class="bar-2"></div>
+                        </div>
+
+                        <div class="html">
+                            <div class="html-1">
+                                <div>PHP</div>
+                                <div>90%</div>
+                            </div>
+
+                            <div class="bar-3"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="inner-right">
+                        <div class="html">
+                            <div class="html-1">
+                                <div>Javascript</div>
+                                <div>90%</div>
+                            </div>
+
+                            <div class="bar-4"></div>
+                        </div>
+
+                        <div class="html">
+                            <div class="html-1">
+                                <div>Angular JS</div>
+                                <div>95%</div>
+                            </div>
+
+
+                            <div class="bar-5"></div>
+                        </div>
+
+                        <div class="html">
+                            <div class="html-1">
+                                <div>Wordpress</div>
+                                <div>85%</div>
+                            </div>
+
+                            <div class="bar-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <!-- ---------EXPERIENCE---------- -->
+
+            <section class="experience-container">
+                <div class="border-left">
+                    <div class="web-container">
+                        <h1>Experience</h1>
+                        <span class="arrow">→</span>
+                        <h3>Web Designer</h3>
+                        <p>Soft-Company | 2000- 2050</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, possimus voluptate.
+                            Eligendi,
+                            cum nulla! Cum hic molestiae quibusdam alias vero repellat quas velit beatae in incidunt
+                            quaerat
+                            illo nemo delectus animi voluptatem voluptas vitae temporibus soluta iusto, aliquid illum?
+                            Numquam unde, in non repellat commodi velit libero? Repellendus, eligendi excepturi?</p>
+
+                    </div>
+
+                    <div class="web-container">
+                        <span class="arrow">→</span>
+
+                        <h3>Web Designer</h3>
+                        <p>Soft-Company | 2000- 2050</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, possimus voluptate.
+                            Eligendi,
+                            cum
+                            nulla! Cum hic molestiae quibusdam alias vero repellat quas velit beatae in incidunt quaerat
+                            illo
+                            nemo delectus animi voluptatem voluptas vitae temporibus soluta iusto, aliquid illum?
+                            Numquam
+                            unde,
+                            in non repellat commodi velit libero? Repellendus, eligendi excepturi?</p>
+                    </div>
+                    <div class="web-container">
+                        <span class="arrow">→</span>
+
+                        <h3>Web Designer</h3>
+                        <p>Soft-Company | 2000- 2050</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, possimus voluptate.
+                            Eligendi,
+                            cum nulla! Cum hic molestiae quibusdam alias vero repellat quas velit beatae in incidunt
+                            quaerat
+                            illo nemo delectus animi voluptatem voluptas vitae temporibus soluta iusto, aliquid illum?
+                            Numquam unde, in non repellat commodi velit libero? Repellendus, eligendi excepturi?</p>
+                    </div>
+                </div>
+
+
+                <!-- ------form------- -->
+
+
+                <div class="form">
+                    <div class="subscribe">
+                        <h1>Subscribe My Newsletter</h1>
+                        <p>Subscibe and get latest article in your box</p>
+                        <div class="input-box">
+                            <input type="text" placeholder="Your email">
+                            <button type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------------SERVICES---------------------- -->
+
+            <section class="services">
+                <h1>Services</h1>
+
+                <div class="services-container">
+                    <div class="upper-container">
+                        <div class="chotu">
+                            <img width="70" height="70" src="https://img.icons8.com/ios/50/40C057/google-code.png"
+                                alt="google-code" />
+                            <h5>Web Design</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, ab officiis sed illo
+                                consectetur blanditiis. Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="chotu">
+                            <img width="70" height="70"
+                                src="https://img.icons8.com/external-solidglyph-m-oki-orlando/32/40C057/external-App-Development-android-app-development-solidglyph-m-oki-orlando.png"
+                                alt="external-App-Development-android-app-development-solidglyph-m-oki-orlando" />
+                            <h5>Apps Development</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, ab officiis sed illo
+                                consectetur blanditiis. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="bottom-container">
+                        <div class="chotu">
+                            <img width="70" height="70"
+                                src="https://img.icons8.com/external-anggara-glyph-anggara-putra/32/40C057/external-seo-seo-marketing-anggara-glyph-anggara-putra.png"
+                                alt="external-seo-seo-marketing-anggara-glyph-anggara-putra" />
+                            <h5>SEO</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, ab officiis sed illo
+                                consectetur blanditiis. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="chotu">
+                            <img width="70" height="70" src="https://img.icons8.com/glyph-neue/50/40C057/content.png"
+                                alt="content" />
+                            <h5>Content Writing</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, ab officiis sed illo
+                                consectetur blanditiis. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+            </section>
+
+
+            <!-- -----------------------PORTFOLIO------------- -->
+
+
+            <section class="portfolio">
+                <h1>Portfolio</h1>
+
+                <div class="outer-box">
+                    <ul class="inner-list">
+
+                    </ul>
+                    <div class="star">
+
+
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUUlEQVR4nNXWP0oDQRTH8TWgpDD+a8QiRYhBrAXBQsRCLyCk0TpCDqCgjZAmV/AAKtiIhbbxAApa26QWJOlURL8y+MAh2V12ZnZG8oPp3psPzL6d3SgatQATav0HfAd0QqMV4JvfVEPCh/zlICT8oMH3odAqw6mFgI9j4KMQ8FMM/OgbXSI5yz7AIjALtFLgltQUTTbeBF6APv7SF2NDhxeBLv7THbpwgGng0iN6DcylHXsD+MgR/JSbbizLM18BnnM62rXMwyb4FHDhgF6pKTdC9QBNOa6sUbXNyDXAPPBlAKvahTzgfYtjbuQB31rAN67oJPBmAb+r4XSB6ykDdCIrafDqLvB5wru5rtWsJrzzZ7boONAb2ExdqTMxtSXgNOajYP77C2wPbLKboWcHeNX6tmzgtjR3gLJBX1l6VNo2cA3YAwoWvQXp9f8TGI1KfgDU+wfO3QJfJQAAAABJRU5ErkJggg=="
+                                alt="star--v1" height="25px" width="25px">All</li>
+                    </div>
+
+                    <div class="design">
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABb0lEQVR4nO2WTUoDMRSAQ+3KA+QSbl32FgrdeAGFgrhxU7BLz1FcCKOXadd6ArHdK3zy5FUnaZrkTX9A8IPCMJPMNy8v76XO/dMCGAJLYOwOLP3gl4lx/g3wDsyA0y7SpnVdJZdxhCyL8kj6LQIuLZEnxMLMKvXAnJAu8rdqaSSea+TJZVdR6t6K601iyYPQJJ751u9Vxz0CvYSg+EEBUjI6USIahk/Xllyk/Uw+TRXgWi9ZkwNXldK9yM8rpXaxANzq5E/gwkVUSO9cVwgjHxik9khjVFKb0x/pardvBemSyUn7+rE7i7yYU+AIeGjdv9+ndBJFijYZ08ESYNlIWmpok/HWg8Vts3tV5rseLA4YGZZ3kJi/6WAZl8THwLQg7WlOc73d63Wjcxc1UZ+UljfXXi1jXFz4Kp/mclTo7WWpAJwlopJlH7kMKUG1VACeqndgRCRqqqUC8AI8a+TmfhuVYJ10V+g/mcVBpe4v8AW4P//E5fxCowAAAABJRU5ErkJggg=="
+                                alt="design" height="25px" width="25px">Design</li>
+                    </div>
+                    <div class="development">
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABb0lEQVR4nO2WTUoDMRSAQ+3KA+QSbl32FgrdeAGFgrhxU7BLz1FcCKOXadd6ArHdK3zy5FUnaZrkTX9A8IPCMJPMNy8v76XO/dMCGAJLYOwOLP3gl4lx/g3wDsyA0y7SpnVdJZdxhCyL8kj6LQIuLZEnxMLMKvXAnJAu8rdqaSSea+TJZVdR6t6K601iyYPQJJ751u9Vxz0CvYSg+EEBUjI6USIahk/Xllyk/Uw+TRXgWi9ZkwNXldK9yM8rpXaxANzq5E/gwkVUSO9cVwgjHxik9khjVFKb0x/pardvBemSyUn7+rE7i7yYU+AIeGjdv9+ndBJFijYZ08ESYNlIWmpok/HWg8Vts3tV5rseLA4YGZZ3kJi/6WAZl8THwLQg7WlOc73d63Wjcxc1UZ+UljfXXi1jXFz4Kp/mclTo7WWpAJwlopJlH7kMKUG1VACeqndgRCRqqqUC8AI8a+TmfhuVYJ10V+g/mcVBpe4v8AW4P//E5fxCowAAAABJRU5ErkJggg=="
+                                alt="design" height="25px" width="25px">Development</li>
+                    </div>
+
+
+                    </ul>
+                </div>
+
+
+                <div class="icon-box">
+                    <div class="up-container">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.xi_VY54V535hztHz11VTyQHaFL?rs=1&pid=ImgDetMain"
+                                alt="" height="300px" width="450px">
+                        </div>
+                        <div>
+                            <img src="https://i.ytimg.com/vi/cvV28xzjclA/maxresdefault.jpg" alt="" height="300px"
+                                width="450px">
+                        </div>
+                    </div>
+                    <div class="down-container">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.e-khxhRkDwKkn_nC2sy7GAHaE8?rs=1&pid=ImgDetMain"
+                                alt="" height="300px" width="450px">
+                        </div>
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.zS3PSBRlY1_P1KSTBGAYAgHaE8?rs=1&pid=ImgDetMain"
+                                alt="" height="300px" width="450px">
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <hr>
+
+            <!-- --------------------testimonial--------------------------- -->
+
+
+            <section class="testimonial ">
+                <div>
+                    <h1>Testimonial</h1>
+                </div>
+
+                <div class="test-innerbox multiple-items ">
+                    <div class="test-box">
+                        <div class="icon"><i class="fa fa-3x fa-quote-left text-primary mb-4"></i></div>
+                        <div class="test-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laboriosam reiciendis!
+                            Consequatur molestiae cumque praesentium, officia doloremque impedit consequuntur accusamus!
+                        </div>
+                        <div class="test-image">
+                            <div><img src="/images/testimonial-1.jpg" alt="" height="60px" width="60px"></div>
+                            <div class="name-box">
+                                <p>Client Name</p>
+                                <h5><i>Profession</i></h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="test-box">
+                        <div class="icon"><i class="fa fa-3x fa-quote-left text-primary mb-4"></i></div>
+                        <div class="test-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laboriosam reiciendis!
+                            Consequatur molestiae cumque praesentium, officia doloremque impedit consequuntur accusamus!
+                        </div>
+                        <div class="test-image">
+                            <div><img src="/images/testimonial-2.jpg" alt="" height="60px" width="60px"></div>
+                            <div class="name-box">
+                                <p>Client Name</p>
+                                <h5><i>Profession</i></h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="test-box">
+                        <div class="icon"><i class="fa fa-3x fa-quote-left text-primary mb-4"></i></div>
+                        <div class="test-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laboriosam reiciendis!
+                            Consequatur molestiae cumque praesentium, officia doloremque impedit consequuntur accusamus!
+                        </div>
+                        <div class="test-image">
+                            <div><img src="/images/testimonial-3.jpg" alt="" height="60px" width="60px"></div>
+                            <div class="name-box">
+                                <p>Client Name</p>
+                                <h5><i>Profession</i></h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <hr>
+
+            <!-- --------------CONTACT ME------------------------- -->
+
+
+            <section class="contact-me">
+                <div class="starting-box">
+                    <h1>Contact Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ducimus earum illum dignissimos
+                        voluptate? Dolor, inventore! Facere consequatur ea corporis! Lorem ipsum dolor, sit amet
+                        consectetur
+                        adipisicing elit. Veritatis totam fugiat vero inventore perferendis deleniti ipsa eaque optio
+                        repellendus asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam
+                        enim doloribus quod recusandae autem nemo pariatur itaque, quae consequuntur quos nulla officia
+                        amet debitis. Consequuntur quisquam corporis, nostrum adipisci omnis enim possimus voluptatum
+                        atque eos beatae, voluptatem vero aliquid est necessitatibus minima iste! Labore voluptate
+                        consectetur consequatur sint nostrum.</p>
+                    <a href="https://htmlcodex.com/demo/?item=2122">Download Now</a>
+
+                </div>
+
+                <div class="input-form">
+                    <form action="">
+                        <div class="text-email">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                            <input type="text" name="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="subject-message">
+                            <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <a href="https://htmlcodex.com/demo/?item=2122"><button type="button">Send Message</button></a>
+
+
+
+
+                    </form>
+
+                </div>
+
+                <div class="final-box">
+                    <div>
+                        <div class="button-container">
+                            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                                    height="30" viewBox="0 0 50 50" style="fill:#40C057;">
+                                    <path
+                                        d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
+                                    </path>
+                                </svg></div>
+                            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                                    height="30" viewBox="0 0 50 50" style="fill:#40C057;">
+                                    <path
+                                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                                    </path>
+                                </svg></div>
+                            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35"
+                                    height="35" viewBox="0 0 64 64" style="fill:#40C057;">
+                                    <path
+                                        d="M48,8H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8V16C56,11.582,52.418,8,48,8z M24,47h-5V27h5 V47z M24.029,23.009C23.382,23.669,22.538,24,21.5,24c-1.026,0-1.865-0.341-2.519-1.023S18,21.458,18,20.468 c0-1.02,0.327-1.852,0.981-2.498C19.635,17.323,20.474,17,21.5,17c1.038,0,1.882,0.323,2.529,0.969 C24.676,18.615,25,19.448,25,20.468C25,21.502,24.676,22.349,24.029,23.009z M47,47h-5V35.887C42,32.788,40.214,31,38,31 c-1.067,0-2.274,0.648-2.965,1.469S34,34.331,34,35.594V47h-5V27h5v3.164h0.078c1.472-2.435,3.613-3.644,6.426-3.652 C44.5,26.5,47,29.5,47,34.754V47z">
+                                    </path>
+                                </svg></i></div>
+                            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35"
+                                    height="35" viewBox="0 0 24 24" style="fill:#40C057;">
+                                    <path
+                                        d="M 3 3 L 3 21 L 21 21 L 21 3 L 3 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z">
+                                    </path>
+                                </svg></div>
+
+                        </div>
+                    </div>
+                    <div class="links-box">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Help</a>
+                    </div>
+                    <p class="p-box">© All Rights Reserved. Designed by <a href="#">HTML Codex</a></p>
+                </div>
+            </section>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+
+
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+
+        });
+
+    </script>
+</body>
+
+</html>
